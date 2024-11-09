@@ -69,6 +69,7 @@ const WebsocketComponent: FC = () => {
         try { 
             if (employee) {
                 const message: IMessage = {id: messageId, chatId: id, employeeId: employee.id, message: name, createTime: new Date()}
+                console.log(message)
                 socket.emit('server-message:send', {...message})    
             }
         } catch (e) {

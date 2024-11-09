@@ -6,7 +6,7 @@ export type useSocketStore = {
 }
 
 export const useSocketStore = create<useSocketStore>(() =>  ({
-    socket: io(import.meta.env.VITE_SERVER_URL,{
+    socket: io(import.meta.env.VITE_SERVER_URL_SOCKET,{
         autoConnect: false
     })
 }))

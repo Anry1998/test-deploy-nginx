@@ -8,7 +8,9 @@ ssh root@194.67.84.82
 qwFVeflahfy1kCzR
 
 
-sudo rm -rf test-deploy
+sudo rm -rf docker-compose.yml
+
+touch docker-compose.yml
 
 
 yarn uninstall node-sass

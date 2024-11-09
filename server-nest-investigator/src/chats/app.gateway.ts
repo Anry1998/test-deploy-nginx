@@ -38,8 +38,11 @@ let employeeSocketsList = []
 
 
 // @UseGuards(WsJwtGuard) 
+// @WebSocketGateway({
+//   cors: {origin: 'http://localhost:5173' }, 
+// })
 @WebSocketGateway({
-  cors: {origin: 'http://79.174.84.239:5173' }, 
+  cors: {origin: 'http://194.67.84.82:5173' }, 
 })
 export class MyGateway implements OnGatewayInit, OnGatewayConnection, OnGatewayDisconnect {
   constructor(

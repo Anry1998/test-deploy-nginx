@@ -7,7 +7,7 @@ import { IMessage } from "../models/response/IMessages";
 
 // const {data} = await axios.get<AxiosResponse<any[]>>(`${API_URL}/chat/get-all-chat-message/${id}`, {withCredentials: true})
 
-export default class ChatService {
+export default class ChatService {  
 
     static async getAllEmployeeChats(employeId: number): Promise<AxiosResponse<ChatResponce[]>> {
         return $api.get<ChatResponce[]>(`/chat/get-all-employee-chat?employeId=${employeId}`) 
@@ -18,7 +18,7 @@ export default class ChatService {
     }
 
     // static async updateMessage(messageId: number, updateBodyMessage: string): Promise<AxiosResponse<IMessage>> {
-    //     return $api.post<IMessage>('/chat/update-message', {messageId, updateBodyMessage})
+    //     return $api.post<IMessage>('/api/chat/update-message', {messageId, updateBodyMessage})
     // }
 
     // static async logout(): Promise<void> {

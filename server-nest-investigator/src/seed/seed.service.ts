@@ -60,7 +60,7 @@ export class SeedService {
         } 
     }   
    
-    async createExampleEmployes() {
+    async createExampleEmployes() {  
         const postData:CreateEmployeeDto[] =[
             { email: 'andrey.britvin.983@mail.ru', password: 'Aa79628775438!',organid:1, postid: 1, divisionid:1,},
             { email: 'andrey.britvin.98@mail.ru', password: 'Aa79628775438!', organid:1, divisionid:1, postid: 1},

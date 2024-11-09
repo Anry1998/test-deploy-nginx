@@ -50,6 +50,8 @@ function App() {
       .then(() => {
         socket.auth = { accessToken: `Bearer ${localStorage.getItem('access-token')}`};
         socket.connect();
+        console.log('socket.connect') 
+      
       })
     }
   }, [])
